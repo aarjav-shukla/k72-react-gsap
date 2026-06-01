@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: font1;
+  src: url(../fonts/Lausanne-300.woff2);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(../fonts/Lausanne-500.woff2);
+}
+
+
+
+
+
+.moveX,.moveX1,.moveX2,.moveX3{
+  animation-name: marqueanimation;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+
+  /* //old one */
+  /* opacity: 0;
+  background-color: transparent; */
+}
+@keyframes marqueanimation{
+  from  {
+
+    transform: translateX(0);
+  }
+  to{
+   
+    transform: translateX(-50%);
+  }
+}
+
