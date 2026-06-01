@@ -18,7 +18,7 @@ const App = () => {
 
 
   return (
-    <div className="" ref={scrollRef}>
+    <div className="">
       <Navmenu />
       <Routes>
         <Route path="/" element={<Home />} />
