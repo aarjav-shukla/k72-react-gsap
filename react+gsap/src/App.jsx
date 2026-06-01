@@ -14,26 +14,11 @@ import LocomotiveScroll from 'locomotive-scroll'
 
 const App = () => {
  
-  const scrollRef = useRef(null);
-
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-      // Adjust these settings depending on your performance needs
-      multiplier: 1,
-      lerp: 0.08,
-    });
-
-    // Cleanup: destroy scroll instance when component unmounts
-    return () => {
-      if (scroll) scroll.destroy();
-    };
-  }, []);
+ 
 
 
   return (
-    <div className="" data-scroll-container ref={scrollRef}>
+    <div className="" ref={scrollRef}>
       <Navmenu />
       <Routes>
         <Route path="/" element={<Home />} />
