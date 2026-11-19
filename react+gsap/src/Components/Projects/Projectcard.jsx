@@ -63,7 +63,7 @@ const Projectcard = (props) => {
         </div>
       </div>
 
-     
+
     </>
   );
 };
