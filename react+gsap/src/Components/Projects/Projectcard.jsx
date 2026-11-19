@@ -31,7 +31,7 @@ const Projectcard = (props) => {
           </div>
         </div>
         <img
-          className="h-full w-full group-hover:scale-105 duration-200 hover:bg-black/50 object-cover "
+          className="h-full w-full group-hover:scale-105 duration-500 hover:bg-black/50 object-cover "
           src={props.image1}
           alt=""
         />
@@ -52,7 +52,7 @@ const Projectcard = (props) => {
           </div>
         </div>
         <img
-          className="h-full w-full group-hover:scale-105 duration-200 hover:bg-black/50 object-cover "
+          className="h-full w-full group-hover:scale-105 duration-500 hover:bg-black/50 object-cover "
           src={props.image2}
           alt=""
         />
