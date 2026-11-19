@@ -24,67 +24,67 @@ const o = "/Projetimages/15.jpg";
 const p = "/Projetimages/16.jpg";
 const q = "/Projetimages/17.jpg";
 const Main = () => {
-    const proetimage=[{image1:a,image2:b},{image1:c,image2:d},{image1:e,image2:f}
-        ,{image1:g,image2:q},{image1:i,image2:j},{image1:k,image2:l},{image1:m,image2:n},{image1:o,image2:p}
-        ]
-    
-const [navOpen,setnavOpen]=useContext(Navbarcontext);
+  const proetimage = [{ image1: a, image2: b }, { image1: c, image2: d }, { image1: e, image2: f }
+    , { image1: g, image2: h }, { image1: i, image2: j }, { image1: k, image2: l }, { image1: m, image2: n }, { image1: o, image2: p }
+  ]
 
-gsap.registerPlugin(ScrollTrigger)
-useGSAP((elem)=>{
-    gsap.to([".agence-btn",".project-btn"],{
-      height:0,
-      stagger:{
-        amount:-0.2,
+  const [navOpen, setnavOpen] = useContext(Navbarcontext);
+
+  gsap.registerPlugin(ScrollTrigger)
+  useGSAP((elem) => {
+    gsap.to([".agence-btn", ".project-btn"], {
+      height: 0,
+      stagger: {
+        amount: -0.2,
       },
-        scrollTrigger:{
-            trigger:".lol",
-            
-            start:"top 50%",
-            end:"top 35%",
-            scrub:2
-            
+      scrollTrigger: {
+        trigger: ".lol",
 
-        }
+        start: "top 50%",
+        end: "top 35%",
+        scrub: 2
+
+
+      }
     })
-     gsap.to(".hola", {
-       display: "none",
-       scrollTrigger: {
-         trigger: ".lol",
-         
-         start: "top 50%",
-         end: "top 35%",
-         scrub: 2,
-       },
-     });
-     gsap.to(".menu-btn", {
-       height: "50px",
-       stagger: {
-         amount: -0.2,
-       },
-       scrollTrigger: {
-         trigger: ".lol",
-         
-         start: "top 50%",
-         end: "top 35%",
-         scrub: 2,
-       },
-     });
-   
-gsap.to(".cardcontainer", {
-  height: "100px",
-  stagger: {
-    amount: 5,
-  },
-  scrollTrigger: {
-    trigger: ".lol",
-    start: "top 40%",
-    
-    end: "top -150%",
-    scrub: 2,
-  },
-});
-})
+    gsap.to(".hola", {
+      display: "none",
+      scrollTrigger: {
+        trigger: ".lol",
+
+        start: "top 50%",
+        end: "top 35%",
+        scrub: 2,
+      },
+    });
+    gsap.to(".menu-btn", {
+      height: "50px",
+      stagger: {
+        amount: -0.2,
+      },
+      scrollTrigger: {
+        trigger: ".lol",
+
+        start: "top 50%",
+        end: "top 35%",
+        scrub: 2,
+      },
+    });
+
+    gsap.to(".cardcontainer", {
+      height: "100px",
+      stagger: {
+        amount: 5,
+      },
+      scrollTrigger: {
+        trigger: ".lol",
+        start: "top 40%",
+
+        end: "top -150%",
+        scrub: 2,
+      },
+    });
+  })
 
 
 
@@ -121,7 +121,7 @@ gsap.to(".cardcontainer", {
         <h1 className="text-black font-[font2] text-[13vw] uppercase relative leading-[10vw]">
           projets <span className="text-4xl -top-4 absolute">17</span>
         </h1>
-        <div className="lol  ">
+        <div className="lol">
           {proetimage.map(function (elem, idx) {
             return (
               <div key={idx} className="cardcontainer w-full  flex gap-3 mb-3 ">
